@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="index.css" />
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+  
+  <div class="container grid">
+  <div class="maincard">
+  <section id="card-rating">
+  <div class = "circle-wrapper grid"><img src="./images/icon-star.svg" /> </div>
+  
+
+  <h1 class="text-clr-White"> How did we do? </h1>
+  
+<p> Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering! </p>
+  
+  <form>
+  <div class="rating-wrapper" id="selectrating">
+	<label for="rating-1">
+	  <input hidden type="radio" name="rating" id="rating-1" value="1" />
+	  <span class="rating-circle-wrapper grid">1</span>
+	</label>
+	<label for="rating-2">
+	  <input hidden type="radio" name="rating" id="rating-2" value="2" />
+	  <span class="rating-circle-wrapper grid">2</span>
+	</label>
+	<label for="rating-3">
+	  <input hidden type="radio" name="rating" id="rating-3" value="3" />
+	  <span class="rating-circle-wrapper grid">3</span>
+	</label>
+	<label for="rating-4">
+	  <input hidden type="radio" name="rating" id="rating-4" value="4" />
+	  <span class="rating-circle-wrapper grid">4</span>
+	</label>
+	<label for="rating-5">
+	  <input hidden type="radio" name="rating" id="rating-5" value="5" />
+	  <span class="rating-circle-wrapper grid">5</span>
+	</label>
+
+  </div>
+  </br>
+  
+  
+  <button id ="btn">SUBMIT</button>
+  </form>
+  </section>
+</br>
+  
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div id ="completed">
+  <center>
+  <img
+	  src="./images/illustration-thank-you.svg"
+	  alt="thank you illustration"
+  />
+  </br></br></br>
+
+ <!-- <div class = "rating-finished-wrapper grid" >You selected X out of 5 </div>-->
+  <div class="rating-finished-wrapper grid statement"></div>
+
+  <h1 class="text-clr-White">Thank you!</h1>
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! </p> </center>
+
+  <!-- Thank you state end -->
+  </div>
+</div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Mohamed-Abdelhamed">Mohamed Abdelhamed</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
+:root {
+  --primary-clr-orange: 25 97% 53%;
+  --clr-White: 0 0% 100%;
+  --clr-Light-Grey: 217 12% 63%;
+  --clr-Medium-Grey: 216 12% 54%;
+  --clr-Dark-Blue: 213 19% 18%;
+  --clr-Very-Dark-Blue: 216 12% 8%;
+
+  --fontsize: 15px;
+
+  --fontweight: 400;
+  --fontweight: 700;
+
+}
+
+
+body {
+  background-color: hsl(var(--clr-Very-Dark-Blue));
+  color: hsl(var(--clr-Medium-Grey));
+  font-size: var(--fontsize);
+  font-weight: var(--fontweight);
+  font-family: "Overpass", sans-serif;
+}
+
+h1,
+p {
+  line-height: 2;
+}
+
+.text-clr-White {
+  color: hsl(var(--clr-White));
+}
+
+
+.container {
+  min-width: fit-content;
+  min-height: 100vh;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: "1fr auto 1fr";
+  place-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.maincard {
+  background-color: hsl(var(--clr-Dark-Blue));
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  max-width: 26rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(var(--primary-clr-orange));
+  width: 100%;
+  padding: 15px;
+  color: hsl(var(--clr-White));
+  font-weight: var(--fontweight);
+  letter-spacing: 2.5px;
+}
+
+button:hover {
+  color: hsl(var(--primary-clr-orange));
+  background-color: hsl(var(--clr-White));
+}
+
+.circle-wrapper {
+  background-color: hsl(var(--clr-White) / 0.05);
+  width: clamp(45px, 12vw, 52px);
+  height: clamp(45px, 12vw, 52px);
+  border-radius: 50%;
+  place-items: center;
+}
+
+.rating-circle-wrapper {
+  cursor: pointer;
+  background-color: hsl(var(--clr-White) / 0.05);
+  width: clamp(45px, 12vw, 52px);
+  height: clamp(45px, 12vw, 52px);
+  border-radius: 50%;
+  place-items: center;
+
+}
+
+.rating-circle-wrapper:hover {
+  color: hsl(var(--primary-clr-orange));
+  background-color: hsl(var(--clr-White));
+}
+
+.grid {
+  display: grid;
+}
+
+.rating-wrapper {
+  justify-content: space-between;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[name="rating"]:checked + .rating-circle-wrapper {
+  background-color: hsl(var(--primary-clr-orange));
+  color: hsl(var(--clr-White));
+}
+
+#completed {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-finished-wrapper {
+  background-color: hsl(var(--clr-White) / 0.05);
+  color: hsl(var(--primary-clr-orange));
+  place-items: center;
+  height: clamp(25px, 12vw, 42px);
+  border-radius: 30px;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
